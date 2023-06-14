@@ -192,8 +192,6 @@ class ScannerBlockComments {
             Lox.error(line, "Unterminated block comment.");
             return;
         }
-        advance(); // consume *
-        advance(); // consume /
     }
 
     private boolean match(char expected) {
